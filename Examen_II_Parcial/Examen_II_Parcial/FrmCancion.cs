@@ -37,6 +37,17 @@ namespace Examen_II_Parcial
                 nuevaC.nombre = txtnombre.Text;
                 nuevaC.artista = Convert.ToInt16(txtartista.Text);
                 nuevaC.album = Convert.ToInt16(txtartista.Text);
+                nuevaC.genero = txtgenero.Text;
+                nuevaC.aniocreacion = txtaniocreacion.Text;
+
+                if (Cancion.InsertarCancion(nuevaC))
+                {
+                    MessageBox.Show("Datos ingresados correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Error en la inserción");
+                }
             }
             
         }
