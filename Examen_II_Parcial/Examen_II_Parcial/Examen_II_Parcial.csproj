@@ -45,6 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCancion.Designer.cs">
+      <DependentUpon>FrmCancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCancionesE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCancionesE.Designer.cs">
+      <DependentUpon>FrmCancionesE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cancion.cs" />
+    <Compile Include="Models\Conexion.cs" />
     <Compile Include="PantallaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +67,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCancion.resx">
+      <DependentUpon>FrmCancion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCancionesE.resx">
+      <DependentUpon>FrmCancionesE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaInicio.resx">
       <DependentUpon>PantallaInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -64,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

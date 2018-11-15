@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Examen_II_Parcial
 {
-    public partial class PantallaInicio : Form
+    public partial class FrmCancionesE : Form
     {
-        public PantallaInicio()
+        public FrmCancionesE()
         {
             InitializeComponent();
         }
@@ -20,18 +20,6 @@ namespace Examen_II_Parcial
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnEliminarCancion_Click(object sender, EventArgs e)
-        {
-            FrmCancionesE canE = new FrmCancionesE();
-            canE.Show();
-        }
-
-        private void btnAgregarcancion_Click(object sender, EventArgs e)
-        {
-            FrmCancion can = new FrmCancion();
-            can.Show();
         }
     }
 }
