@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Examen_II_Parcial
 {
-    public partial class Form1 : Form
+    public partial class PantallaInicio : Form
     {
-        public Form1()
+        public PantallaInicio()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
